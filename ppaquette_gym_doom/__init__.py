@@ -11,6 +11,8 @@ from .doom_my_way_home import DoomMyWayHomeEnv
 from .doom_predict_position import DoomPredictPositionEnv
 from .doom_take_cover import DoomTakeCoverEnv
 from .doom_deathmatch import DoomDeathmatchEnv
+from .doom_battleD3 import DoomBattleD3Env
+from .doom_battleD4 import DoomBattleD3Env
 
 # Env registration
 # ==========================
@@ -86,6 +88,13 @@ register(
 register(
     id='{}/DoomDeathmatch-v0'.format(USERNAME),
     entry_point='{}_gym_doom:DoomDeathmatchEnv'.format(USERNAME),
+    max_episode_steps=10000,
+    reward_threshold=20.0,
+)
+
+register(
+    id='{}/DoomBattle3-v0'.format(USERNAME),
+    entry_point='{}_gym_doom:DoomBattleD3Env'.format(USERNAME),
     max_episode_steps=10000,
     reward_threshold=20.0,
 )
