@@ -18,8 +18,8 @@ from .doom_battleD4 import DoomBattleD3Env
 # ==========================
 
 register(
-    id='{}/meta-Doom-v0'.format(USERNAME),
-    entry_point='{}_gym_doom:MetaDoomEnv'.format(USERNAME),
+    id='{}/meta-Doom-v0',
+    entry_point='{}.gym.doom:MetaDoomEnv',
     max_episode_steps=999999,
     reward_threshold=9000.0,
     kwargs={
@@ -30,71 +30,71 @@ register(
 )
 
 register(
-    id='{}/DoomBasic-v0'.format(USERNAME),
-    entry_point='{}_gym_doom:DoomBasicEnv'.format(USERNAME),
+    id='{}/DoomBasic-v0',
+    entry_point='{}.gym.doom:DoomBasicEnv',
     max_episode_steps=10000,
     reward_threshold=10.0,
 )
 
 register(
-    id='{}/DoomCorridor-v0'.format(USERNAME),
-    entry_point='{}_gym_doom:DoomCorridorEnv'.format(USERNAME),
+    id='{}/DoomCorridor-v0',
+    entry_point='{}.gym.doom:DoomCorridorEnv',
     max_episode_steps=10000,
     reward_threshold=1000.0,
 )
 
 register(
-    id='{}/DoomDefendCenter-v0'.format(USERNAME),
-    entry_point='{}_gym_doom:DoomDefendCenterEnv'.format(USERNAME),
+    id='{}/DoomDefendCenter-v0',
+    entry_point='{}.gym.doom:DoomDefendCenterEnv',
     max_episode_steps=10000,
     reward_threshold=10.0,
 )
 
 register(
-    id='{}/DoomDefendLine-v0'.format(USERNAME),
-    entry_point='{}_gym_doom:DoomDefendLineEnv'.format(USERNAME),
+    id='{}/DoomDefendLine-v0',
+    entry_point='{}.gym.doom:DoomDefendLineEnv',
     max_episode_steps=10000,
     reward_threshold=15.0,
 )
 
 register(
-    id='{}/DoomHealthGathering-v0'.format(USERNAME),
-    entry_point='{}_gym_doom:DoomHealthGatheringEnv'.format(USERNAME),
+    id='{}/DoomHealthGathering-v0',
+    entry_point='{}.gym.doom:DoomHealthGatheringEnv',
     max_episode_steps=10000,
     reward_threshold=1000.0,
 )
 
 register(
-    id='{}/DoomMyWayHome-v0'.format(USERNAME),
-    entry_point='{}_gym_doom:DoomMyWayHomeEnv'.format(USERNAME),
+    id='{}/DoomMyWayHome-v0',
+    entry_point='{}.gym.doom:DoomMyWayHomeEnv',
     max_episode_steps=10000,
     reward_threshold=0.5,
 )
 
 register(
-    id='{}/DoomPredictPosition-v0'.format(USERNAME),
-    entry_point='{}_gym_doom:DoomPredictPositionEnv'.format(USERNAME),
+    id='{}/DoomPredictPosition-v0',
+    entry_point='{}.gym.doom:DoomPredictPositionEnv',
     max_episode_steps=10000,
     reward_threshold=0.5,
 )
 
 register(
-    id='{}/DoomTakeCover-v0'.format(USERNAME),
-    entry_point='{}_gym_doom:DoomTakeCoverEnv'.format(USERNAME),
+    id='{}/DoomTakeCover-v0',
+    entry_point='{}.gym.doom:DoomTakeCoverEnv',
     max_episode_steps=10000,
     reward_threshold=750.0,
 )
 
 register(
-    id='{}/DoomDeathmatch-v0'.format(USERNAME),
-    entry_point='{}_gym_doom:DoomDeathmatchEnv'.format(USERNAME),
+    id='{}/DoomDeathmatch-v0',
+    entry_point='{}.gym.doom:DoomDeathmatchEnv',
     max_episode_steps=10000,
     reward_threshold=20.0,
 )
 
 register(
-    id='{}/DoomBattle3-v0'.format(USERNAME),
-    entry_point='{}_gym_doom:DoomBattleD3Env'.format(USERNAME),
+    id='{}/DoomBattle3-v0',
+    entry_point='{}.gym.doom:DoomBattleD3Env',
     max_episode_steps=10000,
     reward_threshold=20.0,
 )
@@ -108,7 +108,7 @@ add_group(
 )
 
 add_task(
-    id='{}/meta-Doom-v0'.format(USERNAME),
+    id='{}/meta-Doom-v0',
     group='doom',
     summary='Mission #1 to #9 - Beat all 9 Doom missions.',
     description="""
@@ -137,7 +137,7 @@ Scoring:
 )
 
 add_task(
-    id='{}/DoomBasic-v0'.format(USERNAME),
+    id='{}/DoomBasic-v0',
     group='doom',
     summary='Mission #1 - Kill a single monster using your pistol.',
     description="""
@@ -167,7 +167,7 @@ Allowed actions:
 )
 
 add_task(
-    id='{}/DoomCorridor-v0'.format(USERNAME),
+    id='{}/DoomCorridor-v0',
     group='doom',
     summary='Mission #2 - Run as fast as possible to grab a vest.',
     description="""
@@ -199,7 +199,7 @@ Allowed actions:
 )
 
 add_task(
-    id='{}/DoomDefendCenter-v0'.format(USERNAME),
+    id='{}/DoomDefendCenter-v0',
     group='doom',
     summary='Mission #3 - Kill enemies coming at your from all sides.',
     description="""
@@ -230,7 +230,7 @@ Allowed actions:
 )
 
 add_task(
-    id='{}/DoomDefendLine-v0'.format(USERNAME),
+    id='{}/DoomDefendLine-v0',
     group='doom',
     summary='Mission #4 - Kill enemies on the other side of the room.',
     description="""
@@ -261,7 +261,7 @@ Allowed actions:
 )
 
 add_task(
-    id='{}/DoomHealthGathering-v0'.format(USERNAME),
+    id='{}/DoomHealthGathering-v0',
     group='doom',
     summary='Mission #5 - Learn to grad medkits to survive as long as possible.',
     description="""
@@ -289,7 +289,7 @@ Allowed actions:
 )
 
 add_task(
-    id='{}/DoomMyWayHome-v0'.format(USERNAME),
+    id='{}/DoomMyWayHome-v0',
     group='doom',
     summary='Mission #6 - Find the vest in one the 4 rooms.',
     description="""
@@ -317,7 +317,7 @@ Allowed actions:
 )
 
 add_task(
-    id='{}/DoomPredictPosition-v0'.format(USERNAME),
+    id='{}/DoomPredictPosition-v0',
     group='doom',
     summary='Mission #7 - Learn how to kill an enemy with a rocket launcher.',
     description="""
@@ -349,7 +349,7 @@ Allowed actions:
 )
 
 add_task(
-    id='{}/DoomTakeCover-v0'.format(USERNAME),
+    id='{}/DoomTakeCover-v0',
     group='doom',
     summary='Mission #8 - Survive as long as possible with enemies shooting at you.',
     description="""
@@ -374,7 +374,7 @@ Allowed actions:
 )
 
 add_task(
-    id='{}/DoomDeathmatch-v0'.format(USERNAME),
+    id='{}/DoomDeathmatch-v0',
     group='doom',
     summary='Mission #9 - Kill as many enemies as possible without being killed.',
     description="""

@@ -10,7 +10,7 @@ from package_info import USERNAME, VERSION
 setup(name='{}-{}'.format(USERNAME, 'gym-doom'),
     version=VERSION,
     description='Gym User Env - 9 Doom levels based on VizDoom',
-    url='https://github.com/ppaquette/gym-doom',
+    url='https://github.com/shanlior/gym-doom',
     author='Philip Paquette',
     author_email='pcpaquette@gmail.com',
     license='MIT License',
