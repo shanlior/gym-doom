@@ -1,4 +1,4 @@
-from gym.envs.registration import register
+from gym.envs.registration import registry, register, make, spec
 from gym.scoreboard.registration import add_task, add_group
 from .package_info import USERNAME
 from .doom_env import DoomEnv, MetaDoomEnv
@@ -17,6 +17,8 @@ from .doom_battleD4 import DoomBattleD3Env
 # Env registration
 # ==========================
 
+for i in range (0,10000):
+  print('lior')
 register(
     id='{}/meta-Doom-v0',
     entry_point='{}.gym.doom:MetaDoomEnv',
